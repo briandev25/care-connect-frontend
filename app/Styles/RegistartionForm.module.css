@@ -1,207 +1,185 @@
-
-
-.ProvidersForm{
-    display: grid;
-    gap: 10px;
+.ProvidersForm {
+  display: grid;
+  gap: 10px;
 }
-.ProvidersForm input{
-
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 3px;
-    
-   
+.ProvidersForm input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 3px;
 }
-.ProvidersForm textarea{
-    border: solid 1px #ccc;
-    border-radius: 3px;
-    padding: 10px;
-
+.ProvidersForm textarea {
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  padding: 10px;
 }
-.ProvidersForm select{
-    background-color: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 3px;
+.ProvidersForm select {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 3px;
 }
 
-.RegistartionConatiner h1{
-    text-align: center;
-    font-size: 32px;
+.RegistartionConatiner h1 {
+  text-align: center;
+  font-size: 32px;
 }
-.RegistartionConatiner{
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.RegistartionConatiner {
+  display: flex;
+  overflow-x: hidden;
+  flex: 1;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.optionsDropdown{
-    background-color: red;
+.optionsDropdown {
+  background-color: red;
 }
 
 .item {
-    flex: 0 0 calc(50% - 10px);
-    padding: 10px;
-    
+  flex: 0 0 calc(50% - 10px);
+  padding: 10px;
 }
 
-.item h1{
-    text-align: left;
-    margin-left: 20px;
-    font-size: 1.7rem;
-    color: var(--primary-color);
-
+.item h1 {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 1.7rem;
+  color: var(--primary-color);
 }
 
-.item ul{
-  
-    display: grid;
-    gap: 15px;
-    margin-top: 40px;
-    text-align: left;
-    margin-left: 20px;
+.item ul {
+  display: grid;
+  gap: 15px;
+  margin-top: 40px;
+  text-align: left;
+  margin-left: 20px;
 }
 
-.ProviderDetails form{
-    display: grid;
-    gap: 1.5rem;
-    grid-auto-columns: 1fr;
-    padding-block: 1rem;
+.ProviderDetails form {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  padding-block: 1rem;
 
-    width:min(95%, 70rem);
-    grid-template-areas: 
-    'one one'
-    'two three'
-    'four four'
-    'five six'
-    'seven seven'
-    'eight nine'
-    'ten eleven'
-    ;
+  width: min(95%, 70rem);
+  grid-template-areas:
+    "one one"
+    "two three"
+    "four four"
+    "five six"
+    "seven seven"
+    "eight nine"
+    "ten eleven";
 }
 .ProviderDetails input:nth-child(1) {
-    grid-area: one;
+  grid-area: one;
 }
 
 .ProviderDetails input:nth-child(2) {
-    grid-area: two;
+  grid-area: two;
 }
 
 .ProviderDetails input:nth-child(3) {
-    grid-area: three;
+  grid-area: three;
 }
-.ProviderDetails textarea{
-   grid-area: four;
+.ProviderDetails textarea {
+  grid-area: four;
 }
-
 
 .ProviderDetails input:nth-child(5) {
-    grid-area: five;
+  grid-area: five;
 }
 
 .ProviderDetails input:nth-child(6) {
-    grid-area: six;
+  grid-area: six;
 }
 
 .ProviderDetails input:nth-child(7) {
-    grid-area: seven;
-   
+  grid-area: seven;
 }
 
-
 .ProviderDetails input:nth-child(8) {
-    grid-area: eight;
+  grid-area: eight;
 }
 
 .ProviderDetails input:nth-child(9) {
-    grid-area: nine;
-} 
+  grid-area: nine;
+}
 
 .ProviderDetails button {
-    grid-area: eleven;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 3px;
-    width: 50%;
-} 
-
-.ProviderDetails select:nth-child(10){
-    grid-area: ten;
-    
+  grid-area: eleven;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 3px;
+  width: 50%;
 }
 
-
+.ProviderDetails select:nth-child(10) {
+  grid-area: ten;
+}
 
 .columnSpan2 {
-    grid-column: span 2;
-    padding-bottom: 30px;
-    border-radius: 3px;
-    border: 1px solid #D3D3D3;
+  grid-column: span 2;
+  padding-bottom: 30px;
+  border-radius: 3px;
+  border: 1px solid #d3d3d3;
 }
 
-.FacilityDetails{
-    display: grid;
-    gap: 1.5rem;
-    grid-auto-columns: 1fr;
-    padding-block: 4rem;
+.FacilityDetails {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  padding-block: 4rem;
 
-    width:min(95%, 70rem);
+  width: min(95%, 70rem);
 }
 
-.DoctorDetails{
-    display: grid;
-    gap: 1.5rem;
-    grid-auto-columns: 1fr;
-    padding-block: 4rem;
+.DoctorDetails {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  padding-block: 4rem;
 
-    width:min(95%, 70rem);
-    
+  width: min(95%, 70rem);
 }
 
-.Error{
-    width: 95%;
-    background-color: red;
-    border-radius: 3px;
-    padding: 10px;
-    color: white;
- }
-
-
-
- .ButtonContainer{
-    display: flex;
-    justify-content: space-between;
-    
- }
-
-.ButtonContainer button{
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 3px;
-    width: 20%;
-    padding: 10px;
+.Error {
+  width: 95%;
+  background-color: red;
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
 }
 
-.RegistrationHeader{
-    background-color: var(--primary-color);
-    text-align: center;
-    border-radius: 6px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    color: #ffffff;
-   
+.ButtonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ButtonContainer button {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 3px;
+  width: 20%;
+  padding: 10px;
+}
+
+.RegistrationHeader {
+  background-color: var(--primary-color);
+  text-align: center;
+  border-radius: 6px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #ffffff;
 }
 
 .icon {
-  color: var(--primary-color); 
+  color: var(--primary-color);
   margin-right: 10px;
-
 }
 
-.item li{
-    display: flex;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    
+.item li {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
 }

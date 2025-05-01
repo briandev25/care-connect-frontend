@@ -1,142 +1,128 @@
 /* This is the header section */
 
-.header{
-    
-    height: 550px;
-    margin-top: 0px;
-    text-align: center;
-    border-radius: 6px;
-    place-items: center;
-   border: 1px solid #ccc;
-    
+.header {
+  text-align: center;
+  height: fit-content;
+  border-radius: 6px;
+  place-items: center;
+  border: 1px solid #ccc;
+  padding-bottom: 30px;
 }
 
-.HeaderText{
-    padding-top: 60px;
+.HeaderText {
+  padding-top: 60px;
 }
 
-
-.HeaderText h1{
-    
-    font-size: 2.8rem;
-    
+.HeaderText h1 {
+  font-size: 2.8rem;
 }
 /* Home page .categories */
-.CategoriesContainer{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    place-items: center;
+.CategoriesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  place-items: center;
 }
-.DocCategory{
-    background-color: var(--primary-color);
-    padding: 30px;
-    color: white;
-    border-radius: 6px;
-    display: flex;
-    gap: 20px;
+.DocCategory {
+  background-color: var(--primary-color);
+  padding: 30px;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  gap: 20px;
 }
-.DocCategory h2{
-    text-align: left;
-    font-size: 1.9rem;
+.DocCategory h2 {
+  text-align: left;
+  font-size: 1.9rem;
 }
-.DocCategory a{
-    text-align: left;
-    text-decoration: underline;
-
+.DocCategory a {
+  text-align: left;
+  text-decoration: underline;
+  white-space: nowrap;
 }
-.HosCategory{
-    background-color: var(--primary-color);
-    padding: 30px;
-    color: white;
-    border-radius: 6px;
-    display: flex;
-    gap: 20px;
-
-}
-.HosCategory h2{
-    text-align: left;
-    font-size: 1.9rem;
-
-}
-.HosCategory a{
-    text-align: left;
-    text-decoration: underline;
-}
-
 
 /* Featured Listings section */
 
-.featuredList{
-    text-align: center;
-    font-size: 2.8rem;
-    letter-spacing: 1.14px;
+.featuredList {
+  text-align: center;
+  font-size: 2.8rem;
+  letter-spacing: 1.14px;
 }
-.featuredList span{
-    border-bottom:  4px solid var(--primary-color);
+.featuredList span {
+  border-bottom: 4px solid var(--primary-color);
 }
-.header{
-    background-image: src();
+.header {
+  background-image: src();
 }
-
 
 /* registartion area hoem page */
 
-.registertext h1{
-    font-size: 2.8rem; 
-    color: white;
-} 
-
-.registertext{
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin: auto;
-    background-color: var(--primary-color);
-    border-radius: 6px ;
+.registertext h1 {
+  font-size: 2.8rem;
+  color: white;
 }
 
-.facilitybtn{
-    border: 1px solid #ccc ;
-    border-radius: 3px;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px;
-    font-size: 1.25rem;
+.registertext {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin: auto;
+  background-color: var(--primary-color);
+  border-radius: 6px;
 }
 
-.doctorbtn{
-    border: 1px solid #ccc ;
-    border-radius: 3px;
-    padding: 10px;
-    font-size: 1.25rem;
+.facilitybtn {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  font-size: 1.25rem;
+}
 
+.doctorbtn {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 1.25rem;
 }
 
 /* search bar area */
 
-.SearchFooter{
-   display: flex;
-   justify-content: center;
-   place-items: center;
-   margin-left: 170px;
-
+.SearchFooter {
+  display: flex;
+  justify-content: center;
+  place-items: center;
 }
-.searchText{
-    text-align: center;
+.searchText {
+  text-align: center;
 }
 
 /* Media query for mobile screens */
 @media (max-width: 768px) {
-    .sercContent,.categories,.registertext  {
-      grid-template-columns: 1fr; 
-      width: 90%;
-    }
-    .h1{
-        font-size: 1.25rem;
-    }
+  .sercContent,
+  .categories,
+  .registertext {
+    grid-template-columns: 1fr;
+    width: 90%;
   }
+  .HeaderText h1,
+  .searchText h1 {
+    font-size: 1.95rem;
+    font-weight: 600;
+  }
+
+  .HeaderText p {
+    font-size: 0.75rem;
+  }
+  .DocCategory h2 {
+    font-size: 1.5rem;
+  }
+  .featuredList h1 {
+    font-size: 1.95rem;
+  }
+}

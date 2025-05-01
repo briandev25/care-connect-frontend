@@ -4,19 +4,17 @@
 
 /* If using plain CSS */
 @font-face {
-  font-family: 'Aleo';
-  src: url('../public/Aleo-Regular.ttf') 
+  font-family: "Aleo";
+  src: url("../public/Aleo-Regular.ttf");
   /* Add other font weights and styles here if needed */
 }
 
-
-
 :root {
-  --primary-color: #0B3C41;
-  --secondary-color: #F6F7EF;
-  --third-color: #BEE0DF;
+  --primary-color: #0b3c41;
+  --secondary-color: #f6f7ef;
+  --third-color: #bee0df;
   --staic: #ffffff;
-  --background: #ccc; 
+  --background: #ccc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,20 +24,17 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-*{
-  font-family: 'Aleo';
-  
+* {
+  font-family: "Aleo";
 }
 body {
   padding: 1rem;
   margin: auto;
- 
-  
 }
-h1{
+h1 {
   font-size: 2.8rem;
 }
-p{
+p {
   text-wrap: balance;
 }
 
@@ -48,4 +43,3 @@ p{
     text-wrap: balance;
   }
 }
-
