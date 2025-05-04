@@ -1,55 +1,93 @@
-
-.signupPage{
+.signupPage {
   display: flex;
   justify-content: space-between; /* Adjust as needed */
   align-items: center;
 }
+.line {
+  height: 1px;
+  background-color: black;
+  width: 26%;
+}
 
-.formComponent{
+.formComponent {
   flex: 1;
-  margin-left: 70px;
+}
+.formInnerContainer {
+  padding: 5px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .formInnerContainer {
+    width: 100%;
+  }
+  .signupPage {
+    height: 100dvh;
+  }
 }
 
-
-.SignupSidebar{
-    display: grid;
-    background-image:url(/images/userpagebg.jpg);
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    background-repeat: no-repeat;
-    color: white;
-    background-size: cover;
-
+.SignupSidebar {
+  display: grid;
+  background-image: url(/images/userpagebg.jpg);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .SignupSidebar {
+    display: none;
+  }
+}
+.topPart {
+  display: flex;
+  gap: 16px;
+  height: 72vh;
+  color: black;
 }
 
-.topPart{
-    display: flex;
-    gap: 16px;
-    height: 72vh;
-    color: black;
+.line {
+  height: 1px;
+  background-color: black;
+  width: 50%;
+  margin-top: 10px;
 }
 
-.line{
-    height: 1px;
-    background-color: black;
-    width: 50%;
-    margin-top: 10px;
-}
-
-.bottomPart h1{
+.bottomPart h1 {
   font-size: 4rem;
   letter-spacing: 2px;
 }
 
-.navigationOption{
+.navigationOption {
   display: flex;
-   gap: 10px;
-   text-align: left;
-   width: 50%;
-   margin-top: 10%;
-
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 70%;
+  margin-top: 10%;
+  font-size: 14px;
 }
-.navigationOption a{
-  color: var(--primary-color);
+.loginLink {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 0px 45px;
+  border-radius: 5px;
+}
+.googleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
 }

@@ -1,33 +1,90 @@
-
-.signupPage{
-    display: grid;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+.signInPage {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 33px); /* Full height */
+  /* Adjust as needed */
+  align-items: center;
+}
+.formComponent {
+  flex: 1;
+  height: 100%;
 }
 
-.navigationOption{
-    text-align: center;
+.formInnerWrapper {
+  width: 70%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.SignupSidebar{
-    display: grid;
-    background-color: red;
-    padding: 20px;
-    border-radius: 10px;
-
+@media (max-width: 768px) {
+  .formInnerWrapper {
+    width: 100%;
+  }
+  .signInPage {
+    height: 100dvh;
+  }
 }
 
-.topPart{
-    display: flex;
-    gap: 16px;
-    height: 80vh;
+.SignInSidebar {
+  display: grid;
+  background-image: url(/images/userpagebg.jpg);
+  height: 100%;
+  border-radius: 10px;
+  flex: 1;
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}
+@media (max-width: 1024px) {
+  .SignInSidebar {
+    display: none;
+  }
+}
+.googleLoginButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.line{
-    height: 1px;
-    background-color: black;
-    width: 50%;
+.topPart {
+  display: flex;
+  gap: 16px;
+  height: 72vh;
+  color: black;
+}
+
+.line {
+  height: 1px;
+  background-color: black;
+  width: 50%;
+}
+.registerLink {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 0px 45px;
+  border-radius: 5px;
+}
+.navigationOption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 70%;
+  padding-bottom: 10%;
+}
+@media (max-width: 768px) {
+  .navigationOption {
+    width: 100%;
+    padding-top: 20%;
+  }
 }

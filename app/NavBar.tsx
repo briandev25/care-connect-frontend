@@ -55,7 +55,7 @@ function NavBar() {
             ))}
             <div className=" flex flex-col items-center  mt-5 space-y-5">
               <Link href="/users/login">
-                <div className=" px-12 py-2 w-fit text-center bg-white text-black rounded-lg">
+                <div className=" px-12 py-2 w-fit text-center text-black rounded-lg">
                   LOGIN
                 </div>
               </Link>
@@ -111,14 +111,14 @@ function NavBar() {
           ) : (
             <>
               <Link
-                className=" px-3 py-2 bg-white text-black rounded-lg"
+                className=" px-6 py-2 border border-x-teal-800 hover:shadow-md text-black rounded-lg"
                 href="/users/login"
               >
                 LOGIN
               </Link>
               <Link
                 href="/users/signup"
-                className="bg-[#0B3C41] text-white rounded-lg px-3 py-2 ml-3"
+                className="bg-[#0B3C41] text-white rounded-lg px-6 hover:shadow-md py-2 ml-3"
               >
                 Sign Up
               </Link>
