@@ -1,198 +1,250 @@
-.ListingsContainer{
-    padding: 10px;
+.ListingsContainer {
+  padding: 30px;
 }
-.providerDoctorListing{
-    display: flex;
-    gap: 40px;
-    
+.providerDoctorListing {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
 }
-.ListSidebar{
-    width: 20%;
+.ListSidebar {
+  width: 20%;
 }
-.CardContainer{
-    border : solid 1px #ccc;
-    display: flex;
-    /* flex-wrap: wrap; */
-    gap: 20px;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    width: 85%;
-    
+.listingArea {
+  padding: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
-
-.CardContainer h4{
-    margin-top: -40px;
-    margin-left: 15px;
-    background-color: var(--primary-color);
-    position: absolute;
-    padding: 3px;
-    border-radius: 18px;
-    text-align: center;
-    width: 10%;
-    color: white;
+.CardContainer {
+  border: solid 1px #ccc;
+  display: flex;
+  padding-right: 10px;
+  gap: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  aspect-ratio: 4/1;
+}
+.imageContainer {
+  width: 30%;
 }
 
-.contentArea{
-    display: grid;
-   align-content: space-evenly;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   
-}
-.contentArea h1{
-    font-size: 1.3rem;
-    font-weight: 400;
-    
+.CardContainer h4 {
+  margin-top: -40px;
+  margin-left: 15px;
+  background-color: var(--primary-color);
+  position: absolute;
+  padding: 3px;
+  border-radius: 18px;
+  text-align: center;
+  width: 10%;
+  color: white;
 }
 
-.CardContainer img{
-    object-fit: cover;
-    width: 500px;
-    height: 250px;
+.contentArea {
+  padding: 5px 0px;
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.contentArea h1 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.rightContentArea {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.leftContentArea {
+  flex: 1;
+  padding: 10px 0px;
+}
+.knowMoreButton {
+  color: black;
+  background-color: white;
+  border: 1px solid var(--primary-color);
+}
+.bookNowButton {
+  background-color: var(--primary-color);
+  color: white;
+}
+.bookNowButton,
+.knowMoreButton {
+  padding: 10px 30px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+.imageContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .callToAction button {
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 20%;
-    font-size: 18px;
-    letter-spacing: 1.5px;
-    color: var(--primary-color);
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.5s ease; /* Smooth transition */
-  }
-  
-  .callToAction button:hover {
-    border: 1px solid #ccc;
-    text-align: center;
-    border-radius: 3px;
-    color: var(--primary-color);
- 
-  }
-  
-.CardContainer span{
-    opacity: 50%;
-}
-.FeaturedCardContainer{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    place-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;   
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 20%;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s ease; /* Smooth transition */
 }
 
-.FeaturedCard img{
-    width:290px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 3px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+.callToAction button:hover {
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 3px;
+  color: var(--primary-color);
 }
 
+.CardContainer span {
+  opacity: 50%;
+}
+.FeaturedCardContainer {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  place-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.FeaturedCard img {
+  width: 290px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 .pagination {
-    display: flex;
-    margin-top: 20px;
-  }
-  
-  .pagination button {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 12px;
-    margin: 0 5px;
-    border-radius: 60%; /* This makes the buttons rounded */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .pagination button:hover {
-    background-color: #005bb5;
-  }
-  
-  .pagination button.active {
-    background-color: var(--primary-color);
-  }
-  
-  .pagination button.active:hover {
-    background-color: #002451;
-  }
-.higlight{
-    background-color: var(--primary-color);
-    padding: 3px;
-    color: #ffffff;
-    width: 20%;
-    border-radius: 20px;
-    text-align: center;
-    margin-top: 5px;
-    font-size: .75rem;
-    line-height: 1rem;
-    
-
+  display: flex;
+  margin-top: 20px;
 }
 
-.FeaturedCard{
-    padding: 20px;
+.pagination button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 12px;
+  margin: 0 5px;
+  border-radius: 60%; /* This makes the buttons rounded */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.FeaturedCard h1{
-    font-size: 1.3rem;
-    font-weight: 300;
 
+.pagination button:hover {
+  background-color: #005bb5;
 }
-.featureCAT{
-    border-bottom: 1px var(--primary-color) solid;
-    margin-bottom: 5px;
-    margin-top: 5px;
 
+.pagination button.active {
+  background-color: var(--primary-color);
 }
-.featureCAT button:hover{
-    letter-spacing: 1.15px;
-    color: var(--primary-color);
+
+.pagination button.active:hover {
+  background-color: #002451;
 }
-.featuredDetails{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.higlight {
+  background-color: var(--primary-color);
+  padding: 3px;
+  color: #ffffff;
+  width: 20%;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.FeaturedCard {
+  padding: 20px;
+}
+.FeaturedCard h1 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.featureCAT {
+  border-bottom: 1px var(--primary-color) solid;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.featureCAT button:hover {
+  letter-spacing: 1.15px;
+  color: var(--primary-color);
+}
+.featuredDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .stars {
-    display: flex;
-    margin: 5px 0;
-    font-size: 18px;
-  }
-  
-  .filledStar {
-  
-    color: #e0e0e0;
-  }
-  
-  .emptyStar {
-   
-    color: gold;
-  }
+  display: flex;
+  margin: 5px 0;
+  font-size: 18px;
+}
 
-  .searchBar {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: right;
-    border-bottom: 1px solid #ccc;
+.filledStar {
+  color: #e0e0e0;
+}
+
+.emptyStar {
+  color: gold;
+}
+
+.searchBar {
+  display: flex;
+  padding: 15px 0px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.searchBar input {
+  width: 35%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .providerDoctorListing {
+    flex-direction: column;
+    padding: 0px;
   }
-  
-  .searchBar input {
-    width: 60%;
+  .CardContainer {
+    flex-direction: column;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+  .imageContainer {
+    width: 100%;
+    aspect-ratio: 2/1;
+  }
+  .contentArea {
+    flex-direction: column;
+  }
+  .rightContentArea {
+    flex-direction: row;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%;
+    justify-content: center;
   }
-  
-  
+}
